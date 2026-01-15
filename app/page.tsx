@@ -9,13 +9,13 @@ export default function Page() {
 
       <div className="mx-auto max-w-5xl px-5 pt-24 pb-24">
         <Section id="home" title="shannon lin">
-          <p className="text-zinc-300">
+          <p className="font-mono text-sm">
             CS student & builder focused on AI, drones, and real-world systems.
           </p>
         </Section>
 
         <Section id="lifetimeline" title="life timeline">
-          <p className="text-zinc-300">
+          <p className="font-mono text-sm">
             I build systems that combine machine learning, robotics, and software.
           </p>
         </Section>
@@ -26,11 +26,11 @@ export default function Page() {
 
         <Section id="contact" title="contact (how to find me)">
           
-          <p className="text-zinc-300">School Email: Sl3454@cornell.edu Professional Email: Shannonlin24@gmail.com</p>
+          <p className="font-mono text-sm">School Email: Sl3454@cornell.edu Professional Email: Shannonlin24@gmail.com</p>
         </Section>
 
         <Section id="gallery" title="gallery">
-          <p className="text-zinc-300">
+          <p className="font-mono text-sm">
             Put pics here 
           </p>
         </Section>
