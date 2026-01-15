@@ -3,6 +3,7 @@ export default function Navbar() {
     { href: "#home", label: "home" },
     { href: "#lifetimeline", label: "life timeline" },
     { href: "#projects", label: "projects" },
+    { href: "#gallery", label: "gallery" },
     { href: "#contact", label: "contact" },
   ];
 
