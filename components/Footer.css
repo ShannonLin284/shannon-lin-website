@@ -1,13 +1,14 @@
 .footer {
   border-top: 1px solid #e5e5e5;
-  padding: 48px 24px;
+  background-color: #ff5b00;
+  padding: 5px 24px;
 }
 
 .footer-inner {
-  max-width: 72rem; /* max-w-6xl */
+  max-width: 72rem; 
   margin: 0 auto;
-  font-size: 0.875rem; /* text-sm */
-  color: #737373; /* text-neutral-500 */
+  font-size: 0.875rem; 
+  color: #e5e5e5; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +16,11 @@
 
 .footer-links {
   display: flex;
-  gap: 16px;
+  gap: 24px;
+  font-size: 1.0rem;
+  font-weight: 1000;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .footer-link {
