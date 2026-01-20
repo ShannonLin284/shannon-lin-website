@@ -2,17 +2,14 @@ import TopBar from "@/components/TopBar";
 import Section from "@/components/Section";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
-import About from "@/components/About";
-import HelloSticker from "@/components/HelloSticker";
 
-export default function Home() {
+export default function ProjectsPage() {
   return (
     <>
-      <div id="top" />
       <TopBar />
-
-      <HelloSticker />
-
+      <Section title="Projects">
+        <Projects />
+      </Section>
       <Footer />
     </>
   );

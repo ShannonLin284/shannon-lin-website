@@ -4,18 +4,11 @@ export default function TopBar() {
   return (
     <header className="topbar">
       <nav className="topbar-inner">
-        <span className="topbar-logo">Shannon</span>
-
+        <a href="/" className="topbar-logo">Shannon</a>
         <div className="topbar-links">
-          <a href="#projects" className="topbar-link">
-            Projects
-          </a>
-          <a href="#about" className="topbar-link">
-            About
-          </a>
-          <a href="#contact" className="topbar-link">
-            Contact
-          </a>
+          <a href="/projects" className="topbar-link">Projects</a>
+          <a href="/about" className="about-link">About</a>
+          <a href="/contact" className="contact-link">Contact</a>
         </div>
       </nav>
     </header>

@@ -7,12 +7,12 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
-  background: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid #e5e5e5;
+  background: #ff5b00;
+  border-bottom: 0px solid #e5e5e5;
 }
 
 .topbar-inner {
-  max-width: 72rem; /* max-w-6xl */
+  max-width: 72rem; 
   margin: 0 auto;
   padding: 0 24px;
   height: 64px;
@@ -25,17 +25,17 @@
 .topbar-logo {
   font-family: var(--font-changa-one), system-ui, sans-serif;
   font-weight: 400; 
-  letter-spacing: 0.06em;
-  font-size: 1.25rem;
+  letter-spacing: 0.00em;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 
 .topbar-links {
   display: flex;
   gap: 24px;
-  font-size: 0.875rem;
-  font-family: var(--font-changa-one), system-ui, sans-serif;
-  font-weight: 400;
+  font-size: 1.0rem;
+  font-weight: 1000;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
