@@ -1,0 +1,29 @@
+.footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 48px 24px;
+}
+
+.footer-inner {
+  max-width: 72rem; /* max-w-6xl */
+  margin: 0 auto;
+  font-size: 0.875rem; /* text-sm */
+  color: #737373; /* text-neutral-500 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.6;
+}

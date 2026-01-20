@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.font-changa-one {
+  font-family: var(--font-changa-one), system-ui, sans-serif;
+}

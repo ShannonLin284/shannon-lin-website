@@ -1,0 +1,14 @@
+.site-section {
+  padding: 128px 24px; /* py-32 px-6 */
+}
+
+.site-section-inner {
+  max-width: 72rem; /* max-w-6xl */
+  margin: 0 auto;
+}
+
+.site-section-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 40px; /* mb-10 */
+}

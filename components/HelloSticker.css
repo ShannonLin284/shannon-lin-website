@@ -1,0 +1,181 @@
+/* ========== FULL SECTION ========== */
+.helloSticker {
+  min-height: 100vh;
+  background: #000;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 140px;
+
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+
+/* wrapper must hold perspective */
+.helloSticker-wrap {
+  position: relative;
+  perspective: 1200px;
+}
+
+/* ========== FLIP CONTAINER (THE REAL CARD SIZE) ========== */
+.helloSticker-flip {
+  position: relative;
+  width: 360px;
+  aspect-ratio: 16 / 9;   
+  transform-style: preserve-3d;
+  transition: transform 650ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  z-index: 2;
+}
+
+@media (min-width: 640px) {
+  .helloSticker-flip {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .helloSticker-flip {
+    width: 640px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .helloSticker-flip {
+    width: 760px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .helloSticker-flip {
+    width: 880px;
+  }
+}
+
+/* flip happens ONLY when button toggles this class */
+.helloSticker-flip.is-flipped {
+  transform: rotateY(180deg);
+}
+
+/* both faces stacked perfectly */
+.helloSticker-face {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+
+/* front face */
+.helloSticker-front {
+  transform: rotateY(0deg);
+}
+
+/* back face */
+.helloSticker-back {
+  transform: rotateY(180deg);
+}
+
+/* ========== MAIN STICKER CARD ========== */
+.helloSticker-card {
+  position: relative;
+  border-radius: 26px;
+  background: #1f4d44;
+  padding: clamp(16px, 2vw, 28px);
+}
+
+/* white border */
+.helloSticker-border {
+  border-radius: 18px;
+  background: white;
+  padding: 12px;
+}
+
+/* header */
+.helloSticker-header {
+  border-radius: 14px;
+  background: #1f4d44;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.helloSticker-hello {
+  margin: 0;
+  color: white;
+  font-weight: 800;
+  font-size: 2.25rem;
+  letter-spacing: 0.04em;
+}
+
+.helloSticker-sub {
+  margin: 0;
+  color: white;
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: 0.04em;
+}
+
+/* name box */
+.helloSticker-nameBox {
+  margin-top: 16px;
+  border-radius: 14px;
+  background: #f4f1e8;
+  padding: 40px 16px;
+  text-align: center;
+}
+
+/* name text */
+.helloSticker-name {
+  margin: 0;
+  font-family: var(--font-changa-one), system-ui, sans-serif;
+  color: black;
+  letter-spacing: 0.08em;
+  line-height: 0.9;
+  font-size: clamp(2.5rem, 7vw, 6.5rem);
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
+}
+
+/* ========== BACK SIDE TEXT ========== */
+.helloSticker-backBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.helloSticker-backText {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 700;
+  color: #111;
+}
+
+/* ========== ARROW BUTTON ========== */
+.helloSticker-flipBtn {
+  position: absolute;
+  top: 35%;
+  transform: -50%;
+  right: -60px;
+  z-index: 999;
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: rgba(20, 20, 20, 0.55);
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.helloSticker-flipBtn:hover {
+  opacity: 0.55;
+  transform: translateY(-4%) scale(1.05);
+}

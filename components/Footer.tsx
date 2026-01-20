@@ -1,13 +1,16 @@
+import "./Footer.css";
+
 export default function Footer() {
   return (
-    <footer className="border-t py-12 px-6">
-      <div className="max-w-6xl mx-auto text-sm text-neutral-500 flex justify-between">
+    <footer className="footer">
+      <div className="footer-inner">
         <span>© {new Date().getFullYear()} Shannon Lin</span>
-        <div className="flex gap-4">
-          <a href="https://github.com" className="hover:opacity-60">
+
+        <div className="footer-links">
+          <a href="https://github.com" className="footer-link">
             GitHub
           </a>
-          <a href="https://linkedin.com" className="hover:opacity-60">
+          <a href="https://linkedin.com" className="footer-link">
             LinkedIn
           </a>
         </div>
