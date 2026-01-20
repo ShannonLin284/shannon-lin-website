@@ -9,7 +9,7 @@ export const changaOne = Changa_One({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={changaOne.variable}>{children}</body>
     </html>
   );
